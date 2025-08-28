@@ -48,7 +48,6 @@ public class UsuarioConverter {
         return telefoneDTOS.stream().map(this::paraTelefone).toList();
 
     }
-
     public Telefone paraTelefone(TelefoneDTO telefoneDTO) {
         return Telefone.builder()
                 .numero(telefoneDTO.getNumero())
